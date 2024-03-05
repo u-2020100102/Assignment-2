@@ -1,0 +1,26 @@
+﻿@model CetBooks.Models.Book
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<div>
+    <h4>Create Book</h4>
+    <form asp-controller="Books" asp-action="Create" method="post" style="display:flex;flex-direction:column;gap:1rem;">
+        <label>Title</label>
+        <input name="Title" />
+        <label>Author</label>
+        <input name="Author" />
+        <label>Description</label>
+        <input name="Description" />
+        <label>PageSize</label>
+        <input name="PageSize" />
+        <label>Price</label>
+        <input name="Price" />
+        <label>Publish Date</label>
+        <input name="PublishDate" type="datetime-local" />
+        <input type="submit" />
+    </form>
+</div>
